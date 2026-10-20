@@ -18,6 +18,8 @@ const movies = [
     backdrop: "https://image.tmdb.org/t/p/original/xOMo8BRK7PfcJv9JCnx7s5hj0PX.jpg",
     overview: "Paul Atreides se une a los Fremen mientras busca venganza contra quienes destruyeron a su familia. Una épica aventura entre desiertos, profecías y luchas por el poder.",
     trailer: "Way9Dexny3w",
+    director: "Denis Villeneuve",
+    cast: "Timothée Chalamet, Zendaya, Rebecca Ferguson, Josh Brolin",
     featured: true
   },
   {
@@ -26,11 +28,13 @@ const movies = [
     year: 2023,
     rating: 8.1,
     duration: "3h 00min",
-    genres: ["Drama"],
+    genres: ["Drama", "Historia"],
     poster: "https://image.tmdb.org/t/p/w500/ptpr0kGAckfQkJeJIt8st5dglvd.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/fm6KqXpk3M2HVveHwCrBSSBaO0V.jpg",
     overview: "La historia del físico J. Robert Oppenheimer y su papel en el desarrollo de la bomba atómica, en medio de dilemas científicos, políticos y personales.",
-    trailer: "bK6ldnjE3Y0"
+    trailer: "bK6ldnjE3Y0",
+    director: "Christopher Nolan",
+    cast: "Cillian Murphy, Emily Blunt, Matt Damon, Robert Downey Jr."
   },
   {
     id: 3,
@@ -42,7 +46,9 @@ const movies = [
     poster: "https://image.tmdb.org/t/p/w500/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/rAiYTfKGqDCRIIqo664sY9XZIvQ.jpg",
     overview: "Un grupo de exploradores viaja más allá de nuestra galaxia para buscar un futuro para la humanidad. Una historia sobre el tiempo, la ciencia y los vínculos familiares.",
-    trailer: "zSWdZVtXT7E"
+    trailer: "zSWdZVtXT7E",
+    director: "Christopher Nolan",
+    cast: "Matthew McConaughey, Anne Hathaway, Jessica Chastain, Mackenzie Foy"
   },
   {
     id: 4,
@@ -54,7 +60,9 @@ const movies = [
     poster: "https://image.tmdb.org/t/p/w500/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/14QbnygCuTO0vl7CAFmPf1fgZfV.jpg",
     overview: "La identidad de Spider-Man cambia su vida por completo. Cuando la realidad comienza a romperse, Peter debe afrontar las consecuencias de una decisión extraordinaria.",
-    trailer: "JfVOs4VSpmA"
+    trailer: "JfVOs4VSpmA",
+    director: "Jon Watts",
+    cast: "Tom Holland, Zendaya, Benedict Cumberbatch, Jacob Batalon"
   },
   {
     id: 5,
@@ -66,7 +74,9 @@ const movies = [
     poster: "https://image.tmdb.org/t/p/w500/t6HIqrRAclMCA60NsSmeqe9RmNV.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/8rpDcsfLJypbO6vREc0547VKqEv.jpg",
     overview: "Jake Sully y Neytiri protegen a su familia mientras descubren nuevos territorios de Pandora y enfrentan amenazas que ponen en peligro su hogar.",
-    trailer: "d9MyW72ELq0"
+    trailer: "d9MyW72ELq0",
+    director: "James Cameron",
+    cast: "Sam Worthington, Zoe Saldaña, Sigourney Weaver, Kate Winslet"
   },
   {
     id: 6,
@@ -78,7 +88,9 @@ const movies = [
     poster: "https://image.tmdb.org/t/p/w500/62HCnUTziyWcpDaBO2i1DX17ljH.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/odJ4hx6g6vBt4lBWKFD1tI8WS4x.jpg",
     overview: "Después de décadas de servicio, Maverick regresa para entrenar a una nueva generación de pilotos en una misión aérea de alto riesgo.",
-    trailer: "giXco2jaZ_4"
+    trailer: "giXco2jaZ_4",
+    director: "Joseph Kosinski",
+    cast: "Tom Cruise, Miles Teller, Val Kilmer, Jennifer Connelly"
   },
   {
     id: 7,
@@ -86,11 +98,13 @@ const movies = [
     year: 2023,
     rating: 7.7,
     duration: "2h 49min",
-    genres: ["Acción"],
+    genres: ["Acción", "Suspenso"],
     poster: "https://image.tmdb.org/t/p/w500/vZloFAK7NmvMGKE7VkF5UHaz0I.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/h8gHn0OzBoaefsYseUByqsmEDMY.jpg",
     overview: "John Wick busca una forma de derrotar a la organización que lo persigue. Su camino lo lleva a enfrentamientos decisivos en distintos rincones del mundo.",
-    trailer: "qEVUtrk8_B4"
+    trailer: "qEVUtrk8_B4",
+    director: "Chad Stahelski",
+    cast: "Keanu Reeves, Donnie Yen, Scott Adkins, Ian McShane"
   },
   {
     id: 8,
@@ -102,7 +116,9 @@ const movies = [
     poster: "https://image.tmdb.org/t/p/w500/r2J02Z2OpNTctfOSN1Ydgii51I3.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/5YZbUmjbMa3ClvSW1Wj3D6XGolb.jpg",
     overview: "Los Guardianes emprenden una misión para salvar a uno de los suyos. La aventura pone a prueba su amistad y revela detalles del pasado de Rocket.",
-    trailer: "JqcncLPi9zw"
+    trailer: "JqcncLPi9zw",
+    director: "James Gunn",
+    cast: "Chris Pratt, Zoe Saldaña, Dave Bautista, Bradley Cooper"
   },
   {
     id: 9,
@@ -114,7 +130,9 @@ const movies = [
     poster: "https://image.tmdb.org/t/p/w500/oYuLEt3zVCKq57qu2F8dT7NIa6f.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/s3TBrRGB1iav7gFOCNx3H31MoES.jpg",
     overview: "Un especialista capaz de infiltrarse en los sueños recibe una misión aparentemente imposible: implantar una idea en la mente de otra persona.",
-    trailer: "YoHD9XEInc0"
+    trailer: "YoHD9XEInc0",
+    director: "Christopher Nolan",
+    cast: "Leonardo DiCaprio, Joseph Gordon-Levitt, Elliot Page, Tom Hardy"
   },
   {
     id: 10,
@@ -126,7 +144,9 @@ const movies = [
     poster: "https://image.tmdb.org/t/p/w500/gGEsBPAijhVUFoiNpgZXqRVWJt2.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/askg3SMvhqEl4OL52YuvdtY40Yb.jpg",
     overview: "Miguel sueña con ser músico y termina viajando a la Tierra de los Muertos, donde descubre los secretos de su familia y la importancia de recordar.",
-    trailer: "Rvr68u6k5sI"
+    trailer: "Rvr68u6k5sI",
+    director: "Lee Unkrich",
+    cast: "Anthony Gonzalez, Gael García Bernal, Benjamin Bratt, Alanna Ubach"
   },
   {
     id: 11,
@@ -138,7 +158,9 @@ const movies = [
     poster: "https://image.tmdb.org/t/p/w500/vpnVM9B6NMmQpWeZvzLvDESb2QY.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/stKGOm8UyhuLPR9sZLjs5AkmncA.jpg",
     overview: "Riley entra en una nueva etapa de su vida y su mundo emocional cambia con la llegada de sentimientos inesperados que transforman el equilibrio de su mente.",
-    trailer: "LEjhY15eCx0"
+    trailer: "LEjhY15eCx0",
+    director: "Kelsey Mann",
+    cast: "Amy Poehler, Maya Hawke, Lewis Black, Liza Lapira"
   },
   {
     id: 12,
@@ -150,7 +172,9 @@ const movies = [
     poster: "https://image.tmdb.org/t/p/w500/74xTEgt7R36Fpooo50r9T25onhq.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/b0PlSFdDwbyK0cf5RxwDpaOJQvQ.jpg",
     overview: "Un joven Bruce Wayne investiga una serie de crímenes en Gotham y descubre una red de corrupción que desafía todo lo que creía conocer de su ciudad.",
-    trailer: "mqqft2x_Aa4"
+    trailer: "mqqft2x_Aa4",
+    director: "Matt Reeves",
+    cast: "Robert Pattinson, Zoë Kravitz, Colin Farrell, Paul Dano"
   },
   {
     id: 13,
@@ -162,7 +186,9 @@ const movies = [
     poster: "https://image.tmdb.org/t/p/w500/ty8TGRuvJLPUmAR1H1nRIsgwvim.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/6WBIzCgmDCYrqh64yDREGeDk9d3.jpg",
     overview: "Un general romano pierde todo y debe luchar como gladiador mientras busca justicia en un imperio dominado por la ambición y la traición.",
-    trailer: "owK1qxDselE"
+    trailer: "owK1qxDselE",
+    director: "Ridley Scott",
+    cast: "Russell Crowe, Joaquin Phoenix, Connie Nielsen, Oliver Reed"
   },
   {
     id: 14,
@@ -174,7 +200,9 @@ const movies = [
     poster: "https://image.tmdb.org/t/p/w500/39wmItIWsg5sZMyRUHLkWBcuVCM.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/Ab8mkHmkYADjU7wQiOkia9BzGvS.jpg",
     overview: "Una niña entra en un mundo misterioso habitado por espíritus y debe encontrar el valor para salvar a sus padres y regresar a casa.",
-    trailer: "ByXuk9QqQkk"
+    trailer: "ByXuk9QqQkk",
+    director: "Hayao Miyazaki",
+    cast: "Rumi Hiiragi, Miyu Irino, Mari Natsuki, Takashi Naitô"
   },
   {
     id: 15,
@@ -186,7 +214,9 @@ const movies = [
     poster: "https://image.tmdb.org/t/p/w500/A0LZHXUzo5C60Oahvt7VxvwuzHw.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/A0LZHXUzo5C60Oahvt7VxvwuzHw.jpg",
     overview: "Un parque temático lleno de dinosaurios recibe a miles de visitantes. Un experimento genético escapa al control y convierte la atracción en una lucha por sobrevivir.",
-    trailer: "RFinNxS5KN4"
+    trailer: "RFinNxS5KN4",
+    director: "Colin Trevorrow",
+    cast: "Chris Pratt, Bryce Dallas Howard, Vincent D'Onofrio, Irrfan Khan"
   },
   {
     id: 16,
@@ -194,11 +224,13 @@ const movies = [
     year: 2016,
     rating: 7.9,
     duration: "2h 08min",
-    genres: ["Drama"],
+    genres: ["Drama", "Musical"],
     poster: "https://image.tmdb.org/t/p/w500/uDO8zWDhfWwoFdKS4fzkUJt0Rf0.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/nrSaXF39nDfAAeLKksRCyvSzI2a.jpg",
     overview: "Una aspirante a actriz y un músico de jazz persiguen sus sueños en Los Ángeles mientras intentan encontrar un equilibrio entre el amor y sus carreras.",
-    trailer: "0pdqf4P9MB8"
+    trailer: "0pdqf4P9MB8",
+    director: "Damien Chazelle",
+    cast: "Ryan Gosling, Emma Stone, John Legend, Rosemarie DeWitt"
   },
   {
     id: 17,
@@ -210,7 +242,9 @@ const movies = [
     poster: "https://image.tmdb.org/t/p/w500/f89U3ADr1oiB1s9GkdPOEpXUk5H.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/icmmSD4vTTDKOq2vvdulafOGw93.jpg",
     overview: "Un programador descubre que la realidad que conoce esconde una verdad extraordinaria. Una elección cambiará su percepción del mundo para siempre.",
-    trailer: "vKQi3bBA1y8"
+    trailer: "vKQi3bBA1y8",
+    director: "Lana y Lilly Wachowski",
+    cast: "Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss, Hugo Weaving"
   },
   {
     id: 18,
@@ -222,7 +256,108 @@ const movies = [
     poster: "https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/hqkIcbrOHL86UncnHIsHVcVmzue.jpg",
     overview: "Batman se enfrenta a un criminal impredecible que somete a Gotham a una serie de pruebas y obliga a sus habitantes a cuestionar sus propios límites.",
-    trailer: "EXeTwQWrcwY"
+    trailer: "EXeTwQWrcwY",
+    director: "Christopher Nolan",
+    cast: "Christian Bale, Heath Ledger, Aaron Eckhart, Maggie Gyllenhaal",
+    featured: true
+  },
+  {
+    id: 19,
+    title: "Barbie",
+    year: 2023,
+    rating: 7.1,
+    duration: "1h 54min",
+    genres: ["Comedia", "Aventura"],
+    poster: "https://image.tmdb.org/t/p/w500/cgYg04miVQUAG2FKk3amS5YoJJR.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/8eI6eTqQh6q74j0A5hdS2s0Iax5.jpg",
+    overview: "Cuando Barbie y Ken abandonan el mundo perfecto de Barbieland, parten hacia una aventura que pone en duda el equilibrio entre la fantasía y la realidad.",
+    trailer: "pBk4NYhWNMM",
+    director: "Greta Gerwig",
+    cast: "Margot Robbie, Ryan Gosling, America Ferrera, Kate McKinnon"
+  },
+  {
+    id: 20,
+    title: "Mad Max: Fury Road",
+    year: 2015,
+    rating: 8.1,
+    duration: "2h 00min",
+    genres: ["Acción", "Aventura"],
+    poster: "https://image.tmdb.org/t/p/w500/kqjL17yufvn9OVLyXYpvtyrFfak.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/8tZY1Q0YB10u9qClz5s4EsGgQ3d.jpg",
+    overview: "En un futuro postapocalíptico, Max se une a Furiosa y a un grupo de fugitivos en una carrera sin descanso por la supervivencia.",
+    trailer: "hEJnMQG9ev8",
+    director: "George Miller",
+    cast: "Tom Hardy, Charlize Theron, Nicholas Hoult, Hugh Keays-Byrne"
+  },
+  {
+    id: 21,
+    title: "El señor de los anillos: El retorno del rey",
+    year: 2003,
+    rating: 9.0,
+    duration: "3h 21min",
+    genres: ["Aventura", "Fantasía"],
+    poster: "https://image.tmdb.org/t/p/w500/rCzpDGLbOoPwLjy3OAm5NUPOTrC.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/1s7h7gvxB8GUQg7k7MBlJ3UixUG.jpg",
+    overview: "Frodo y Sam intentan llegar al Monte del Destino mientras Aragorn lidera a la comunidad para combatir a Sauron en una épica final.",
+    trailer: "r5X-hFf6Bwo",
+    director: "Peter Jackson",
+    cast: "Elijah Wood, Viggo Mortensen, Ian McKellen, Orlando Bloom"
+  },
+  {
+    id: 22,
+    title: "Parásitos",
+    year: 2019,
+    rating: 8.5,
+    duration: "2h 12min",
+    genres: ["Drama", "Suspenso"],
+    poster: "https://image.tmdb.org/t/p/w500/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/4l1uKcgZg2FJ2vG2V0uwA0ScsN7.jpg",
+    overview: "Una familia pobre se infiltra en la vida de una adinerada para mejorar su fortuna, pero lo que comienza como un plan se convierte en un juego de engaños y supervivencia.",
+    trailer: "5xH0HfJHsaY",
+    director: "Bong Joon-ho",
+    cast: "Song Kang-ho, Lee Sun-kyun, Cho Yeo-jeong, Park So-dam"
+  },
+  {
+    id: 23,
+    title: "El padrino",
+    year: 1972,
+    rating: 9.2,
+    duration: "2h 55min",
+    genres: ["Drama", "Crimen"],
+    poster: "https://image.tmdb.org/t/p/w500/3bhkrj58Vtu7enYsRolD1fZdja1.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/tmU7GeKVybMWFButWEGl2M4GeiP.jpg",
+    overview: "El patriarca de una familia criminal intenta asegurar el futuro de su imperio mientras la violencia y la lealtad amenazan con destruirlo todo.",
+    trailer: "UaVTIH8mujA",
+    director: "Francis Ford Coppola",
+    cast: "Marlon Brando, Al Pacino, James Caan, Robert Duvall"
+  },
+  {
+    id: 24,
+    title: "Whiplash",
+    year: 2014,
+    rating: 8.5,
+    duration: "1h 47min",
+    genres: ["Drama", "Música"],
+    poster: "https://image.tmdb.org/t/p/w500/p7k9Hc8PcYA4sXWQz19vIYyWQjB.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/6bbZ6XyvgFhA8JrJxQYQdXnRu0n.jpg",
+    overview: "Un joven baterista es empujado al límite por un profesor obsesivo que lo lleva a descubrir si el talento o el sacrificio son la clave del éxito.",
+    trailer: "7d_jQycdQnM",
+    director: "Damien Chazelle",
+    cast: "Miles Teller, J.K. Simmons, Melissa Benoist, Paul Reiser"
+  },
+  {
+    id: 25,
+    title: "Los Juegos del Hambre",
+    year: 2013,
+    rating: 7.2,
+    duration: "2h 22min",
+    genres: ["Acción", "Drama"],
+    poster: "https://image.tmdb.org/t/p/w500/6KJm9bUOzJwWQZL3Ulq5H4rcZgE.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/3M7jKxJx9bQ0w2f3p4nYw5i6T2Y.jpg",
+    overview: "Katniss Everdeen acepta participar en un mortífero torneo para proteger a su familia y desafiar un sistema despiadado.",
+    trailer: "m8e-FF8MsqU",
+    director: "Gary Ross",
+    cast: "Jennifer Lawrence, Josh Hutcherson, Liam Hemsworth, Woody Harrelson"
   }
 ];
 
@@ -342,7 +477,8 @@ function getFilteredMovies() {
       movie.genres.some((genre) =>
         genre.toLocaleLowerCase("es").includes(query)
       ) ||
-      String(movie.year).includes(query);
+      String(movie.year).includes(query) ||
+      (movie.director && movie.director.toLocaleLowerCase("es").includes(query));
 
     const matchesGenre =
       activeGenre === "Todas" || movie.genres.includes(activeGenre);
@@ -523,6 +659,8 @@ function openMovieDetails(id) {
     <span>${escapeHTML(movie.duration)}</span>`;
 
   $("#dialogOverview").textContent = movie.overview;
+  $("#dialogDirector").textContent = movie.director || "Director no disponible";
+  $("#dialogCast").textContent = movie.cast || "Reparto no disponible";
 
   $("#dialogGenres").innerHTML = movie.genres.map((genre) =>
     `<span>${escapeHTML(genre)}</span>`
