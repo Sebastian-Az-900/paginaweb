@@ -1,44 +1,247 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Maquetación CSS + Calculadora</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090b10">
+
+  <title>CineVerse | Tu universo de películas</title>
+  <meta name="description"
+        content="Explora películas, descubre historias y encuentra tu próxima película favorita.">
+
+  <link rel="preconnect" href="https://image.tmdb.org">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
+
 <body>
-<header><h1>Maquetación con CSS</h1></header>
-<nav><ul>
-<li><a href="#">Inicio</a></li><li><a href="#">Contenido</a></li><li><a href="#">Requisitos</a></li><li><a href="#">Lenguajes</a></li><li><a href="#">Frameworks</a></li><li><a href="#">Proyectos</a></li>
-</ul></nav>
-<div class="clearfix"></div>
-<section id="content">
-<article class="article"><h2>Título del artículo</h2><img src="imgen1.jpg" alt="Imagen del artículo"><p>Texto del artículo</p></article>
-<article class="article"><h2>Título del artículo</h2><img src="imagen2.jpg" alt="Imagen del artículo"><p>Texto del artículo</p></article>
-</article>
+  <header class="header">
+    <a class="logo" href="#" aria-label="CineVerse inicio">
+      <span class="logo-icon">▶</span>
+      CINE<span>VERSE</span>
+    </a>
 
-<video width="500" controls>
-<source src="presentacion.mp4" type="https://www.youtube.com/watch?v=4HRDFXXuMNE&pp=ygUObWVudGUgcG9zaXRpdmE%3D"
+    <nav class="nav" id="mainNav">
+      <a href="#inicio" class="nav-link active">Inicio</a>
+      <a href="#catalogo" class="nav-link">Películas</a>
+      <a href="#catalogo" class="nav-link" data-genre-link="Acción">Acción</a>
+      <a href="#catalogo" class="nav-link" data-genre-link="Ciencia ficción">Ciencia ficción</a>
+    </nav>
 
-Tu navegador no soporta el elemento de video.
+    <div class="header-actions">
+      <button class="icon-button" id="searchToggle"
+              aria-label="Mostrar buscador" title="Buscar">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="10.8" cy="10.8" r="6.8"></circle>
+          <path d="m16 16 5 5"></path>
+        </svg>
+      </button>
 
+      <button class="profile-button" id="favoritesShortcut"
+              title="Ver favoritos" aria-label="Ver favoritos">
+        <span>♥</span>
+      </button>
 
-</section>
+      <button class="menu-toggle" id="menuToggle"
+              aria-label="Abrir menú" aria-expanded="false">☰</button>
+    </div>
+  </header>
 
-<article class="article">
-<h2>Calculadora JavaScript</h2><img src="imagen3.jpg" alt="Imagen de calculadora"><p>Realiza operaciones matemáticas básicas.</p>
-<div class="calculator">
-<input type="text" id="display" value="0" readonly aria-label="Pantalla de la calculadora">
-<div class="calculator-buttons">
-<button class="calculator-btn clear" data-action="clear">C</button><button class="calculator-btn delete" data-action="delete">⌫</button><button class="calculator-btn operator" data-action="operator" data-value="/">÷</button><button class="calculator-btn operator" data-action="operator" data-value="*">×</button>
-<button class="calculator-btn" data-action="number" data-value="7">7</button><button class="calculator-btn" data-action="number" data-value="8">8</button><button class="calculator-btn" data-action="number" data-value="9">9</button><button class="calculator-btn operator" data-action="operator" data-value="-">−</button>
-<button class="calculator-btn" data-action="number" data-value="4">4</button><button class="calculator-btn" data-action="number" data-value="5">5</button><button class="calculator-btn" data-action="number" data-value="6">6</button><button class="calculator-btn operator" data-action="operator" data-value="+">+</button>
-<button class="calculator-btn" data-action="number" data-value="1">1</button><button class="calculator-btn" data-action="number" data-value="2">2</button><button class="calculator-btn" data-action="number" data-value="3">3</button><button class="calculator-btn equals" data-action="equals">=</button>
-<button class="calculator-btn zero" data-action="number" data-value="0">0</button><button class="calculator-btn" data-action="decimal">.</button>
-</div></div></article>
-</section>
-<aside><h2>Barra lateral</h2><form id="searchForm"><input type="text" id="searchInput" placeholder="Buscar..."><input type="submit" value="Buscar"></form><p id="searchMessage"></p></aside>
-<div class="clearfix"></div>
-<footer>Maquetación con CSS + JavaScript</footer>
-<script src="script.js"></script>
-</body></html>
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-background" id="heroBackground"></div>
+      <div class="hero-shade"></div>
+
+      <div class="hero-content">
+        <span class="eyebrow">
+          <span class="live-dot"></span>
+          TU PRÓXIMA HISTORIA COMIENZA AQUÍ
+        </span>
+
+        <p class="hero-kicker" id="heroKicker">DESTACADA DE LA SEMANA</p>
+        <h1 id="heroTitle">El universo<br>te espera.</h1>
+
+        <div class="hero-meta" id="heroMeta">
+          <span class="rating">★ 8.5</span>
+          <span>2025</span>
+          <span>Ciencia ficción</span>
+          <span>2h 08min</span>
+        </div>
+
+        <p class="hero-description" id="heroDescription">
+          Descubre mundos extraordinarios, personajes inolvidables y
+          aventuras que te llevarán más allá de la imaginación.
+        </p>
+
+        <div class="hero-buttons">
+          <button class="btn btn-primary" id="heroPlay">
+            <span>▶</span> Ver tráiler
+          </button>
+          <button class="btn btn-secondary" id="heroDetails">
+            Más información <span>＋</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="hero-pagination">
+        <span class="pagination-line active"></span>
+        <span class="pagination-line"></span>
+        <span class="pagination-line"></span>
+      </div>
+
+      <div class="hero-counter">01 <span>/</span> 03</div>
+    </section>
+
+    <section class="discovery section-wrap" id="catalogo">
+      <div class="section-heading">
+        <div>
+          <span class="section-label">EXPLORA EL CATÁLOGO</span>
+          <h2>Encuentra tu próxima <span>obsesión.</span></h2>
+          <p class="section-subtitle">
+            Grandes historias, listas para descubrir.
+          </p>
+        </div>
+
+        <button class="text-button" id="favoritesFilter">
+          ♥ Mis favoritos <span id="favoriteCount">0</span>
+        </button>
+      </div>
+
+      <div class="search-panel" id="searchPanel">
+        <label class="search-box">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="10.8" cy="10.8" r="6.8"></circle>
+            <path d="m16 16 5 5"></path>
+          </svg>
+          <input id="searchInput" type="search"
+                 placeholder="Busca películas por título..."
+                 autocomplete="off">
+          <kbd>BUSCAR</kbd>
+        </label>
+      </div>
+
+      <div class="catalog-toolbar">
+        <div class="genre-filters" id="genreFilters">
+          <button class="filter-chip active" data-genre="Todas">Todas</button>
+          <button class="filter-chip" data-genre="Acción">Acción</button>
+          <button class="filter-chip" data-genre="Aventura">Aventura</button>
+          <button class="filter-chip" data-genre="Ciencia ficción">Ciencia ficción</button>
+          <button class="filter-chip" data-genre="Drama">Drama</button>
+          <button class="filter-chip" data-genre="Animación">Animación</button>
+        </div>
+
+        <label class="sort-control">
+          <span>Ordenar:</span>
+          <select id="sortSelect">
+            <option value="popular">Destacadas</option>
+            <option value="rating">Mejor puntuadas</option>
+            <option value="year">Más recientes</option>
+            <option value="title">Título A-Z</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="results-heading">
+        <h3 id="resultsTitle">Películas para descubrir</h3>
+        <span id="resultsCount">Cargando catálogo...</span>
+      </div>
+
+      <div class="movie-grid" id="movieGrid" aria-live="polite">
+        <div class="loading-state">Preparando tu próxima sesión de cine...</div>
+      </div>
+
+      <div class="empty-state" id="emptyState" hidden>
+        <div class="empty-icon">⌕</div>
+        <h3>No encontramos esa película</h3>
+        <p>Prueba con otro título o selecciona un género diferente.</p>
+        <button class="btn btn-primary" id="resetFilters">Ver todo el catálogo</button>
+      </div>
+
+      <div class="load-more-wrap">
+        <button class="btn btn-outline" id="loadMore">
+          Explorar más películas <span>↓</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="promo section-wrap">
+      <div class="promo-content">
+        <span class="section-label">TU CINE, A TU MANERA</span>
+        <h2>Las historias que amas.<br><span>En un solo lugar.</span></h2>
+        <p>
+          Guarda tus favoritas, explora nuevos géneros y crea
+          tu propia colección de películas.
+        </p>
+        <button class="btn btn-primary" id="exploreButton">
+          Explorar catálogo <span>→</span>
+        </button>
+      </div>
+      <div class="promo-art" aria-hidden="true">
+        <div class="promo-orbit orbit-one"></div>
+        <div class="promo-orbit orbit-two"></div>
+        <div class="promo-play">▶</div>
+        <span class="promo-star star-one">✦</span>
+        <span class="promo-star star-two">✧</span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="logo" href="#inicio">
+      <span class="logo-icon">▶</span>
+      CINE<span>VERSE</span>
+    </a>
+
+    <p>Tu universo de películas. Un mundo de historias.</p>
+    <p class="footer-note">
+      Proyecto de demostración. Las películas, imágenes y valoraciones
+      pertenecen a sus respectivos titulares.
+    </p>
+    <span class="copyright">© <span id="currentYear"></span> CineVerse</span>
+  </footer>
+
+  <!-- Ventana de detalles -->
+  <dialog class="movie-dialog" id="movieDialog">
+    <button class="dialog-close" id="closeDialog"
+            aria-label="Cerrar ventana">✕</button>
+    <div class="dialog-backdrop" id="dialogBackdrop"></div>
+
+    <div class="dialog-body">
+      <div class="dialog-poster-wrap">
+        <img id="dialogPoster" src="" alt="Póster de la película">
+      </div>
+
+      <div class="dialog-info">
+        <span class="section-label">FICHA DE LA PELÍCULA</span>
+        <h2 id="dialogTitle">Título de la película</h2>
+        <div class="dialog-meta" id="dialogMeta"></div>
+        <p id="dialogOverview"></p>
+
+        <div class="dialog-genres" id="dialogGenres"></div>
+
+        <div class="dialog-actions">
+          <button class="btn btn-primary" id="dialogPlay">▶ Ver tráiler</button>
+          <button class="btn btn-secondary" id="dialogFavorite">♡ Favorito</button>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Reproductor de tráiler -->
+  <dialog class="video-dialog" id="videoDialog">
+    <button class="dialog-close video-close" id="closeVideo"
+            aria-label="Cerrar reproductor">✕</button>
+    <div class="video-container" id="videoContainer">
+      <p>Selecciona una película para ver su tráiler.</p>
+    </div>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
